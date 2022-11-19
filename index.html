@@ -7,37 +7,56 @@
     <meta name="discription" content="Это сайт - резюме Рустам Хадиева">
     <meta name="keywords" content="resume, rustam, cv">
     <title>Rustam resume</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img src="img_0711.jpg" alt=" аватар Рустам Хадиев" width="200">
-    <h1><strong>Рустам Хадиев</strong></h1>
-    <hr>
-    <p>Мне 47 лет. Я проживаю в г.Самара. Хочу попробовать себя в IT.</p>
-    <p>Я с детства улекаюсь автомобилями и являюсь большим фанатом марки <strong>Toyota</strong>!</p>
-    <p><strong>Я подписан:</strong></p>
-    <a href="https://www.youtube.com/c/%D0%93%D0%BD%D0%B5%D0%B2%D0%97%D0%B5%D0%BC%D0%BB%D0%B8" target="_blank">Гнев земли</a>
-    |
-    <a href="https://www.youtube.com/c/LaitmanRU" target="_blank">Михаэль Лайтман</a>
-    |
-    <a href="https://www.youtube.com/channel/UCGrvFudvfwDZD88BEzxh3Uw" target="_blanck">Советский юмор</a>
-    <h2><strong>Мои хобби</strong></h2>
-    <ul>
-        <li>Путешествия</li>
-            <ul>Поход в горы</ul>
-            <ul>Автопутешествия</ul>
-        <li>Автомобили</li>
-        <li>Кино</li>
-    </ul>
+<div class="container">
+       <div class="info">
+
+        <img src="img_0711.jpg" alt=" аватар Рустам Хадиев" class="avatar">
+
+        
+
+            <div class="info-text">
+
+                <h1><strong>Рустам Хадиев</strong></h1>
+
+                 <p>Мне 47 лет. Я проживаю в г.Самара. Хочу попробовать себя в IT.</p>
+                 <p>Я с детства улекаюсь автомобилями и являюсь большим фанатом марки <strong>Toyota</strong>!</p>
+                <br>
+                 <h4><strong>Я подписан:</strong></h4>
+                 <a href="https://www.youtube.com/c/%D0%93%D0%BD%D0%B5%D0%B2%D0%97%D0%B5%D0%BC%D0%BB%D0%B8" target="_blank">Гнев земли</a>
+                |
+                 <a href="https://www.youtube.com/c/LaitmanRU" target="_blank">Михаэль Лайтман</a>
+                |
+                 <a href="https://www.youtube.com/channel/UCGrvFudvfwDZD88BEzxh3Uw" target="_blanck">Советский юмор</a>
+            </div>
+        </div><br><br>
+                 <h2><strong>Мои хобби</strong></h2>
+
+                <div class="card bg-green">
+                    <ul class="list">
+                         <li>Путешествия</li>
+                            <ul>Походы в горы</ul>
+                            <ul>Автопутешествия</ul>
+                            <li>Автомобили</li>
+                         <li>Кино</li>
+                    </ul>
+                </div>
+            
     <h2><strong>Опыт работы</strong></h2>
-    <table>
-        <thead>
+
+    <div class="card bg-orange">
+
+    <table class="table">
+        <!-- <thead>
             <tr>
                 <th>Название</th>
                 <th>Должность</th>
                 <th>Год</th>
                 
             </tr>
-        </thead>
+        </thead> -->
         <tbody>
             <tr>
                 <td>Выстовочный центр "Атакент</td>
@@ -47,7 +66,7 @@
             <tr>
                 <td>ТОО Астана Моторс</td>
                 <td>Менеджер по продажам автомобилей</td>
-                <td>1998 - 1999</td>
+                <td>1998-1999</td>
             </tr>
             <tr>
                 <td>ТОО Toyota Tsusho Butya</td>
@@ -81,13 +100,13 @@
             </tr>
             <tr>
                 <td>Индивидульный предприниматель</td>
-                <td>Импорт стройматериалов и косметики</td>
+                <td>Экспорт стройматериалов и косметики</td>
                 <td>2014-2018</td>
 
             </tr>
             <tr>
                 <td>ТОО AA Engineering</td>
-                <td>Начальник участка монтажа системы оснижения горнолыжных склонов</td>
+                <td>Начальник участка (монтаж системы оснежения)</td>
                 <td>2018-2019</td>
 
             </tr>
@@ -99,25 +118,31 @@
             </tr>
         </tbody>
     </table>
+    </div> 
+    <br>
     <h2>Связаться со мной</h2>
-    <form>
 
-        <div>
+    <form class="form">
+     
+        <div class="form-group">
             <label for="name">Ваше имя:</label>
             <input type="text" id="name" placeholder="Введите имя">
         </div>
 
-        <div>
-            <label for="email">Ваше email:</label>
+        <div class="form-group">
+            <label for="email">Ваш email:</label>
             <input type="email" id="email" placeholder="Введите email">
         </div>
 
-        <div>
+        <div class="form-group">
             <label for="message">Ваше сообщение:</label>
             <br>
             <textarea name="" id="message" cols="20" rows="5"></textarea>
         </div>
-        <input type="submit" value="Отправить!">
+        <input class="btn" type="submit" value="Отправить!"><br><br>
+
     </form>
+    
+</div>
 </body>
 </html>

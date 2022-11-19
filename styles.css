@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+h1 { 
+    color: rgb(49, 107, 107);
+}
+
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #0f141e;
+    background: #f1f1f1;
+    
+}
+
+.container {
+    max-width:950px;
+    margin: auto;
+    padding-top: 30px;
+    font-weight: bold;
+}
+
+.info {
+    display: flex;
+    
+}
+
+.info-text {
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.avatar {
+    width: 200px;
+    border-radius: 25px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}
+.info-text p {
+    font-style: italic;
+    font-weight: 0px;
+    margin: 0px;
+
+}
+
+@media (max-width: 900px) {
+    .container {
+        font-size: 12px;
+    }
+
+    .info {
+        text-align: center;
+        display: block;
+    }
+    .avatar {
+        text-align: center;
+        margin-left: 40px;
+    }
+}
+.card {
+    border-radius: 10px;
+    padding: 15px 20px;
+    
+}
+
+.btn {
+    background: #333;
+    padding: 10px 15px;
+    color: #bbb;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: blue;
+}
+
+a:visited {
+    color: brown;
+}
+
+.bg-orange {
+    background-color: rgba(255, 208, 0, 0.548);
+}
+
+.bg-green {
+    background-color: aquamarine;
+   
+}
+
+.list {
+    padding: 0 20px;
+    list-style: none;
+}
+
+.list li {
+    margin-bottom: 5px;
+}
+
+.list ul {
+    padding: 3px 35px;
+}
+
+.table {
+    width: 100%;
+}
+
+.table td {
+    padding: 10px;
+}
+
+.table td:nth-child(2),
+.table td:nth-child(3) {
+    color: #888;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    padding-top: 15px;
+}
+
+.form-group input, textarea {
+    width: 30%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0 10px;
+    outline: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
